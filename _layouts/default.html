@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}" data-theme="{{ site.bg_color | default: "auto" }}">
   <head>
+    <!-- Base styles -->
+    <link rel="stylesheet" href="{{ "assets/css/styles.css" | relative_url }}">
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="{{ "assets/css/custom.css" | relative_url }}">
     <!-- Google tag (gtag.js) -->
     {% if site.gtag  %}
     <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.gtag }}"></script>
@@ -38,21 +42,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800&display=swap"
       rel="stylesheet"
     />
-    <!-- Pico.css from CDN -->
-    <link
-      rel="stylesheet"
-      {% if site.theme_color and site.theme_color != "azure" %}
-      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.{{ site.theme_color }}.min.css"
-      {% else %}
-      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css"
-      {% endif %}
-    />
-    <!-- Base styles -->
-    <link rel="stylesheet" href="{{ "assets/css/styles.css" | relative_url }}">
-    <!-- Code highlight styles -->
-    <link rel="stylesheet" href="{{ "assets/css/base16.solarized.css" | relative_url }}">
-    <!-- Custom styles -->
-    <link rel="stylesheet" href="{{ "assets/css/custom.css" | relative_url }}">
+    
   </head>
 
   <body>
