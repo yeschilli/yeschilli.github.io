@@ -1,0 +1,116 @@
+:root {
+	/* Main accent color */
+	--accent: var(--peach);
+	--light-acccent: var(--light-peach);
+	/* Dark theme color palette */
+	--rosewater: #f4dbd6;
+	--flamingo: #f0c6c6;
+	--pink: #f4b8e4;
+	--mauve: #ca9ee6;
+	--red: #ed8796;
+	--peach: #ee99a0;
+	--orange: #f5a97f;
+	--yellow: #eed49f;
+	--green: #a6da95;
+	--teal: #81c8be;
+	--sky: #99d1db;
+	--sapphire: #85c1dc;
+	--blue: #8aadf4;
+	--lavender: #babbf1;
+	--text: #cad3f5;
+	--subtext: #b8c0e0;
+	--background: #181926;
+	--foreground: #24273a;
+	/* Light theme color palette */
+	--light-rosewater: #dc8a78;
+	--light-flamingo: #dd7878;
+	--light-pink: #ea76cb;
+	--light-mauve: #8839ef;
+	--light-red: #d20f39;
+	--light-peach: #fe640b;
+	--light-yellow: #df8e1d;
+	--light-green: #40a02b;
+	--light-teal: #179299;
+	--light-sky: #04a5e5;
+	--light-sapphire: #209fb5;
+	--light-blue: #1e66f5;
+	--light-lavender: #7287fd;
+	--light-text: #4c4f69;
+	--light-subtext: #5c5f77;
+	--light-foreground: #eff1f5;
+	--light-mantle: #e6e9ef;
+	--light-background: #dce0e8;
+}
+
+.footer {
+	text-align: center;
+	flex-grow: 1;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.footer-bottom {
+	background-color: var(--footer-bg);
+	color: var(--footer-text);
+	padding: 2rem 0;
+}
+
+.footer-bottom-container {
+	width: 90%;
+  height: 47px;
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1.5rem;
+}
+
+.footer-nav ul,
+.footer-social ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 1.5rem;
+}
+
+.footer-nav a,
+.footer-social a {
+	color: var(--text);
+	text-decoration: none;
+	font-size: 0.9rem;
+	transition: color 0.2s;
+}
+
+.footer-nav a:hover,
+.footer-social a:hover {
+	color: var(--subtext);
+}
+
+.footer-social svg {
+	width: 22px;
+	height: 22px;
+	fill: var(--text);
+	stroke: none;
+	stroke-width: "2";
+	stroke-linecap: "round";
+	stroke-linejoin: "round";
+}
+
+.footer-right {
+	font-size: 0.875rem;
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+	.footer-bottom-container {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
