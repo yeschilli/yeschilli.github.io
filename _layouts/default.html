@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}" data-theme="{{ site.theme | default: "auto" }}">
+<html lang="{{ site.lang | default: "en-US" }}" data-theme="{{ site.bg_color | default: "auto" }}">
   <head>
     <!-- Google tag (gtag.js) -->
     {% if site.gtag  %}
@@ -16,7 +16,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Meta content -->
-    {% if site.theme == "dark" %}
+    {% if site.bg_color == "dark" %}
     <meta name="theme-color" content="#13171F" />
     {% endif %}
     <meta name="color-scheme" content="light dark" />
