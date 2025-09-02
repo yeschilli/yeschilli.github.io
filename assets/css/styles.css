@@ -96,9 +96,12 @@ pre {
 		flex-direction: row;
 		justify-content: space-between;
 	}
+	.footer-right {
+		padding-bottom: 0px;
+	}
 }
 
-@media (min-width: 576px) {
+@media (min-width: 300px) {
 	.footer-right {
 		padding-bottom: 20px;
 	}
