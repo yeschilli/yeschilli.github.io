@@ -101,7 +101,7 @@ pre {
 	}
 }
 
-@media (min-width: 300px) {
+@media (max-width: 767px) {
 	.footer-right {
 		padding-bottom: 20px;
 	}
