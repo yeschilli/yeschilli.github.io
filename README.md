@@ -57,7 +57,7 @@ If there’s a block in the `README.md` file that you don’t want to display on
 </p>
 
 
-<video  align="center" height="200" src="https://github.com/user-attachments/assets/5f213a84-23dc-45c6-9619-1cada7eb258d"></video>
+<video  class="ignore" src="https://github.com/user-attachments/assets/5f213a84-23dc-45c6-9619-1cada7eb258d"></video>
 
 
 
